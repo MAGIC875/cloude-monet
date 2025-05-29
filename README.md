@@ -1,29 +1,43 @@
-# claude monet
+# 🍽️ Vue Food Shop
 
-This template should help get you started developing with Vue 3 in Vite.
+Простой интернет-магазин еды, реализованный с использованием Vue 3, Pinia, Vue Router и LocalStorage.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Возможности
 
-## Customize configuration
+- 📋 Просмотр меню с карточками товаров
+- 🛒 Добавление товаров в корзину
+- 📦 Оформление заказа (имя, фамилия, телефон, адрес)
+- 💾 Сохранение заказа в localStorage
+- ✅ Подтверждение заказа на отдельной странице
+- 🧹 Очистка localStorage при выходе со страницы подтверждения
+- 🎞️ Видео-фон на странице оформления заказа
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## 🧩 Технологии
 
-```sh
-npm install
-```
+- [Vue 3](https://vuejs.org/)
+- [Pinia](https://pinia.vuejs.org/) (стейт-менеджер)
+- [Vue Router](https://router.vuejs.org/)
+- LocalStorage
+- SCSS / CSS
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
-npm run dev
-```
+## ⚙️ Установка и запуск
 
-### Compile and Minify for Production
+1. Установите зависимости:
 
-```sh
-npm run build
-```
+   ```bash
+   npm install
+   ```
+2. Запустите локальный сервер разработки:
+
+   ```bash
+   npm run dev
+   ```
+3. Откройте в браузере:
+
+http://localhost:5173
