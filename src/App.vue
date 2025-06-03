@@ -66,7 +66,7 @@ main{
   scale: 0.98;
 }
 .buttons{
-  padding-left: 20px;
+  padding-left: 360px;
   padding-top: 30px;
 }
 .nav-item{
@@ -78,6 +78,7 @@ main{
   cursor: pointer;
 }
 .logo{
+  position:fixed;
   justify-self: center;
   justify-content: center;
   vertical-align: auto;
@@ -86,10 +87,12 @@ main{
 }
 .nav-p{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding-top: 45px;
-  margin-left: 10px;
+  padding-top:68px;
+  margin-left: 30px;
   font-weight: bold;
   margin-right: 132px;
+  font-size: 12px;
+  z-index: 1;
 }
 .nav-link{
   text-decoration: none;

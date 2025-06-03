@@ -28,7 +28,7 @@
       </label>
       <label>
         Адрес доставки:
-        <textarea v-model="form.address" required></textarea>
+        <input type="text" v-model="form.address" required>
       </label>
 
       <div v-if="cart.items.length === 0">Корзина пуста.</div>

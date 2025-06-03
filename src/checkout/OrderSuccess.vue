@@ -1,4 +1,10 @@
 <template>
+    <div class="video">
+    <video autoplay muted loop>
+      <source src="../base/video/intro2.MOV" type="video/mp4" />
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
   <div class="order-success">
     <h2>Спасибо за ваш заказ, {{ order?.customer?.firstName }}!</h2>
     <p>Ваш заказ подтвержден. Мы скоро свяжемся с вами.</p>
@@ -7,7 +13,7 @@
       <h3>Ваш заказ:</h3>
       <ul>
         <li v-for="(group, index) in groupedItems" :key="index">
-          {{ group.title }} × {{ group.quantity }} — {{ (group.cost * group.quantity).toFixed(2) }} ₽
+          {{ group.title }} <span class="change-color"> x {{ group.quantity }}</span> — {{ (group.cost * group.quantity).toFixed(2) }} ₽
         </li>
       </ul>
       <p><strong>Итого: {{ order.total.toFixed(2) }} ₽</strong></p>
@@ -56,6 +62,20 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+.video {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .order-success {
   max-width: 500px;
   margin: 100px auto;
@@ -104,5 +124,9 @@ a {
 }
 .btn1:active{
   scale: 0.98;
+}
+.change-color{
+  color: #00b400;
+  font-weight: 600;
 }
 </style>
