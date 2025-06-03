@@ -1,43 +1,57 @@
 <template>
-      <div class="video">
+  <div class="video">
     <video autoplay muted loop>
-                    <source src="../base/video/intro2.MOV" type="video/mp4">
-                    Ваш браузер не поддерживает видео.
+      <source src="../base/video/intro2.MOV" type="video/mp4">
+      Ваш браузер не поддерживает видео.
     </video>
-    </div>
-    <div class="cart">
-      <div class="cart-logo">
-        <img src="../base/images/logo2.jpg" alt="">
-            <p class="cart-logo-p">ОФОРМИТЬ ЗАКАЗ</p>
-            <hr>
-        </div>
+  </div>
 
-      <h2>Корзина</h2>
-  
-      <div v-if="cart.items.length === 0">Корзина пуста.</div>
-  
-      <ul v-else class="cart-list">
-        <li v-for="(item, index) in cart.items" :key="index">
-          <strong>{{ item.title }}</strong> — {{ item.cost.toFixed(2) }} ₽
-          <button @click="cart.removeItem(index)">Удалить</button>
-        </li>
-      </ul>
-  
-      <div v-if="cart.items.length">
-        <p><strong>Итого:</strong> {{ cart.totalPrice.toFixed(2) }} ₽</p>
-        <button @click="cart.clearCart">Очистить корзину</button>
-      </div>
+  <div class="cart">
+    <div class="cart-logo">
+      <img src="../base/images/logo2.jpg" alt="">
+      <p class="cart-logo-p">ОФОРМИТЬ ЗАКАЗ</p>
+      <hr>
     </div>
 
+    <h2>Корзина</h2>
 
-    <router-link class="finish" to="/Checkout">оформить заказ</router-link>
-  </template>
+    <div v-if="cart.items.length === 0">Корзина пуста.</div>
+
+    <ul v-else class="cart-list">
+      <li v-for="(item, index) in cart.items" :key="index">
+        <strong>{{ item.title }}</strong> — {{ item.cost.toFixed(2) }} ₽
+        <button @click="cart.removeItem(index)">Удалить</button>
+      </li>
+    </ul>
+
+    <div v-if="cart.items.length">
+      <p><strong>Итого:</strong> {{ cart.totalPrice.toFixed(2) }} ₽</p>
+      <button @click="cart.clearCart">Очистить корзину</button>
+    </div>
+  </div>
+
+  <button
+    class="finish"
+    :disabled="cart.items.length === 0"
+    @click="goToCheckout"
+  >
+    оформить заказ
+  </button>
+</template>
   
-  <script setup>
+<script setup>
+import { useCartStore } from './cart'
+import { useRouter } from 'vue-router'
 
-  import { useCartStore } from './cart'
-  const cart = useCartStore()
-  </script>
+const cart = useCartStore()
+const router = useRouter()
+
+const goToCheckout = () => {
+  if (cart.items.length > 0) {
+    router.push('/Checkout')
+  }
+}
+</script>
   
   <style scoped>
       .video{
@@ -82,26 +96,35 @@
     margin-bottom:10px ;
     color: #333333;
   }
-  .finish{
-    left: 45%;
-    right: 50%;
-    position: fixed;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    bottom: 0;
-    margin-bottom: 30px;
-    height: 30px;
-    font-size: 18px;
-    width:210px;
-    text-align: center;
-    text-decoration: none;
+  .finish {
+  left: 45%;
+  right: 50%;
+  position: fixed;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  bottom: 0;
+  margin-bottom: 30px;
+  height: 30px;
+  font-size: 18px;
+  width: 210px;
+  text-align: center;
+  text-decoration: none;
   color: inherit;
-  padding-top: 8px;
-  border: 1px solid ;
-  }
-  .finish:hover{
-    background-color: #f0f0f0;
-    /* border: solid 2px rgb(213, 255, 134); */
-  }
+  padding-top: 2px;
+  border: 1px solid;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.finish:hover:enabled {
+  background-color: #d2f89f;
+}
+
+.finish:disabled {
+  background-color: #e0e0e0;
+  color: #999;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
   .cart-logo{
     padding: 0;
     margin: 0;
