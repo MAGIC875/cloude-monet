@@ -3,104 +3,111 @@
 </script>
 
 <template>
-   <header>
-      <nav>
-        <div class="navbar">
+  <header>
+    <nav>
+      <div class="navbar">
+        <div class="left-section">
+          <img class="logo" src="./base/images/logo2.jpg" alt="logo" />
+          <!-- <p class="nav-p">ресторан высокой французкой кухни</p> -->
+        </div>
 
-          <img class="logo" src="./base/images/logo2.jpg" alt="">
-          <li class="nav-p">ресторан высокой французкой кухни</li>
-          <div class="buttons">
-            <div class="nav-item nav-button">
 
-              <router-link class="nav-link" to="/">Ресторан</router-link>
-            
-            </div>
-            <div class="nav-item nav-button">
-
-              <router-link class="nav-link" to="/menu">Меню</router-link>
-            </div>
-            <div class="nav-item nav-button">
-
-              <router-link class="nav-link" id="cart-icon" to="/cart">Корзина</router-link>
-            </div>
+        <div class="buttons">
+          <div class="nav-item nav-button">
+            <router-link class="nav-link" to="/">Ресторан</router-link>
           </div>
-         
+          <div class="nav-item nav-button">
+            <router-link class="nav-link" to="/menu">Меню</router-link>
+          </div>
+          <div class="nav-item nav-button">
+            <router-link class="nav-link" id="cart-icon" to="/cart">Корзина</router-link>
+          </div>
+        </div>
       </div>
     </nav>
-    
   </header>
-  <main>
-    <router-view/>
-  </main>
 
+  <main>
+    <router-view />
+  </main>
 </template>
 
 <style scoped>
-body{
+body {
   background-attachment: fixed;
-
 }
-#app{
+
+#app {
   font-family: Arial, Helvetica, sans-serif;
 }
-.navbar{
-  display:flex;
-  height: 90px;
-  position:fixed;
+
+.navbar {
+  position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(255, 255, 255);
   width: 100%;
-  margin: 0 auto;
-  backdrop-filter: blur(20px);
-  box-shadow: rgba(0, 0, 0, 0.815) 0px 0px 20px ;
+  height: 90px;
+  background-color: rgb(255, 255, 255);
+  /* backdrop-filter: blur(20px); */
+  box-shadow: rgba(0, 0, 0, 0.815) 0px 0px 20px;
   z-index: 1000;
-}
-main{
-  margin: 0 auto;
-  margin-top: 120px;
-  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
-.nav-button:active{
-  scale: 0.98;
+.left-section {
+  display: flex;
+  align-items: center;
 }
-.buttons{
-  padding-left: 360px;
-  padding-top: 30px;
+
+.logo {
+  height: 80px;
 }
-.nav-item{
-  display: inline-block;
-  padding: 5px 10px;
+
+.nav-p {
+  position: fixed;
+  font-size: 12px;
+  padding-top: 65px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.buttons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-60%);
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+}
+
+.nav-item {
   font-size: 20px;
-  color: rgba(0, 0, 0, 0.822);
-  border-right:1px solid --green;
+  padding: 5px 10px;
   cursor: pointer;
 }
-.logo{
-  position:fixed;
-  justify-self: center;
-  justify-content: center;
-  vertical-align: auto;
-  height: 80px;
-  padding-left: 20px;
-}
-.nav-p{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding-top:68px;
-  margin-left: 30px;
-  font-weight: bold;
-  margin-right: 132px;
-  font-size: 12px;
-  z-index: 1;
-}
-.nav-link{
+
+.nav-link {
   text-decoration: none;
   color: inherit;
   padding: 3px;
-  border: 1px solid ;
+  border: 1px solid;
 }
-.router-link-active{
+
+.nav-button:active {
+  scale: 0.98;
+}
+
+.router-link-active {
   color: rgba(0, 0, 0, 0.548);
+}
+
+main {
+  margin: 0 auto;
+  margin-top: 120px;
+  min-height: 300px;
 }
 </style>
