@@ -34,7 +34,9 @@
    npm install
    ```
 2. Запустите локальный сервер разработки:
-
+   ```bash
+   cd cloude_monet/
+   ```
    ```bash
    npm run dev
    ```
