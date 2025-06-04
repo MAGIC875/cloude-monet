@@ -127,6 +127,7 @@ function handleAddToCart(item) {
     height: 220px;
 }
 .menu-logo>img{
+    display: grid;
     display: flex;
     justify-self: center;
     height: 210px;

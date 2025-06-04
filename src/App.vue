@@ -40,7 +40,9 @@ body {
 #app {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+main{
+  display: grid;
+}
 .navbar {
   position: fixed;
   top: 0;

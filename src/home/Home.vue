@@ -57,10 +57,12 @@
 
 <style scoped>
     body{
-        display: flex;
+        display: inline-grid;
         align-items: center;
+
     }
     .info{
+        display: grid;
         align-items: center;
         justify-self: center;
         font-size: 22px;
