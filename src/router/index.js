@@ -10,7 +10,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 export default createRouter({
     history: createWebHashHistory(),
     routes:[{
-        path:'/',
+        path:'/cloude-monet',
         name:'ГЛАВНАЯ',
         component:Home
     },{
