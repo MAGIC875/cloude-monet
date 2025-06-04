@@ -2,7 +2,7 @@
   "name": "claude-monet",
   "version": "0.0.0",
   "private": true,
-  "homepage": "",
+  "homepage": "https://magic875.github.io/cloude-monet/",
   "type": "module",
   "scripts": {
     "dev": "vite",
