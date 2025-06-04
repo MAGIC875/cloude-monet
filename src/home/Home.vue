@@ -57,9 +57,11 @@
 
 <style scoped>
     body{
-        display: inline-grid;
         align-items: center;
 
+    }
+    .home{
+        display: inline-grid;
     }
     .info{
         display: grid;
