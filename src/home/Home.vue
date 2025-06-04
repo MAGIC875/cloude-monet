@@ -73,7 +73,7 @@
         backdrop-filter: blur(20px);
         color: rgb(0, 0, 0);
         width: 1344px;
-        height: 4000px;
+        height:fit-content;
         padding: 35px;
         box-shadow: 0px 0px 10px;
     }
