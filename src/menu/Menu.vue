@@ -24,7 +24,7 @@ function handleAddToCart(item) {
 <template>
     <div class="video">
     <video autoplay muted loop>
-                    <source src="../base/video/intro.MOV" type="video/mp4">
+                    <source src="../base/video/intro.MP4" type="video/mp4">
                     Ваш браузер не поддерживает видео.
     </video>
     </div>
