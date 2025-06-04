@@ -123,11 +123,11 @@ function handleAddToCart(item) {
 }
 
 .menu-logo{
+    display: inline-grid;
     width: 1400px;
     height: 220px;
 }
 .menu-logo>img{
-    display: grid;
     display: flex;
     justify-self: center;
     height: 210px;
