@@ -104,7 +104,7 @@ main{
 }
 
 .router-link-active {
-  color: rgba(0, 0, 0, 0.548);
+  color: #3a8b49;
 }
 
 main {

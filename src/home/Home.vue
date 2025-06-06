@@ -8,6 +8,12 @@
 
     <div class="home">
         <div class="info">
+            <div class="info-prev">
+            <div class="info-logo">
+                <img src="../base/images/logo.png" alt="">
+            </div>
+        </div>
+        <div class="main-info">
             <h2>Описание ресторана</h2>
             <hr>
             <h3>Кухня</h3>
@@ -18,7 +24,6 @@
             <img  class="img1" src="../base/images/1.webp" alt="">
             <h2>Персонал</h2>
             <hr>
-
             <h3>Кухня</h3>
             <h4>Шеф-повар</h4>
             <p>Виктор Петрович Баринов — первый шеф-повар ресторана Claude Monet. Мудрый и иногда агрессивный бог Кухни, как его назвал его бывший шеф-повар. Виктор Петрович множество раз участвовал в кулинарных турнирах по всему миру. Постоянно любит пить и в казино до утра посидеть, что является его главной проблемой.</p>
@@ -47,6 +52,7 @@
             <p>Денис Андреевич Крылов — некоторое время был официантом ресторана Claude Monet. Приехал из Воронежа. Друг детства Макса. В первый же день был уволен, но Макс помог ему стать поваром.</p>
             <img src="../base/images/img3.jpg" alt="">
         </div>
+        </div>
     </div>
 
 </template>
@@ -68,14 +74,36 @@
         align-items: center;
         justify-self: center;
         font-size: 22px;
-        margin-top: 610px;
-        background-color: #ffffffde;
+        margin-top: 580px;
+        background-color: #ffffff;
         backdrop-filter: blur(20px);
         color: rgb(0, 0, 0);
         width: 1344px;
         height:fit-content;
-        padding: 35px;
-        box-shadow: 0px 0px 10px;
+
+        box-shadow:rgb(0, 0, 0) 0px 0px 10px;
+    }
+    hr{
+        width: 90%;
+    }
+    .main-info{
+        /* padding: 35px; */
+        display: grid;
+        /* align-items: center; */
+        justify-self: center;
+        color: #333333;
+    }
+    .info-prev{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height:250px;
+        background-color: #1f4b27;
+        display: inline-grid;
+        justify-content: center;
+    }
+    .info-prev>.info-logo>img{
+        height: 250px;
     }
     .video{
         display: flex;
@@ -85,23 +113,38 @@
         left: 0;
         height: 1071.8px;
     }
+    h2{
+        color: #1f4b27;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
     h3{
         margin-top: 20px;
         margin-bottom:10px ;
+        color: #296333;
+        padding-left: 35px;
+        padding-right: 35px;
     }
     h4{
         padding-bottom:10px ;
-        color: #000000c7;
+        color: #388a47;
+        padding-left: 35px;
+        padding-right: 35px;
     }
     p{
         padding-bottom: 10px;
+        padding-left: 35px;
+        padding-right: 35px;
     }
-    .info>img{
+    .info>.main-info>img{
         justify-self: center;
         display: flex;
         margin-top: 10px;
+        padding: 0;
+
         margin-bottom: 10px;
-        height: 420px;
+        /* height: 420px; */
+        width: 100%;
     }
 
 </style>

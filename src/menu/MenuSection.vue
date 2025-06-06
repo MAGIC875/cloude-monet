@@ -68,12 +68,14 @@
   .menu-section {
     padding-left: 45px;
     margin-top: 30px;
+    color: #275730;
   }
   
   .menu-items {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    color: #17381d;
   }
   
   .menu-item {
@@ -92,7 +94,7 @@
   }
   
   hr {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-right: 45px;
   }
   

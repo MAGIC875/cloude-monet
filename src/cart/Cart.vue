@@ -139,7 +139,7 @@ const goToCheckout = () => {
     /* justify-self: center; */
     font-size: 34px;
     font-weight: bold;
-    color: rgb(56, 55, 55);
+    color: #21502a;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   .cart-logo-p{
