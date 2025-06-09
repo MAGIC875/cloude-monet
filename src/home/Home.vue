@@ -59,23 +59,6 @@
 
 <script>
 
-let swiper = new Swiper("#swiper", {
-    slidesPerView: 1,
-    centeredSlides: true,
-    speed:1200,
-    loop:true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  
-  });
-  swiper.enable();
-
 </script>
 
 <style scoped>
