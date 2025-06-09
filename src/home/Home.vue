@@ -21,7 +21,7 @@
             <h3>Зал</h3>
             <p>Здесь трудятся официанты, обслуживая гостей, хостес, которая принимает их, а также бармен, который разливает всякого рода напитки. Зал делится на основную зону, зону диванов и бар. Помещение в основном сделано в теплых тонах: повсюду стоят светильники, мебель, в основном, цвета красного вина. В зоне диванов она белая. Паркет и стены здесь деревянного цвета. </p>
             <hr>
-            <img  class="img1" src="../base/images/1.webp" alt="">
+            <img  class="img1" src="../base/images/slider1.webp" alt="">
             <h2>Персонал</h2>
             <hr>
             <h3>Кухня</h3>
@@ -59,6 +59,23 @@
 
 <script>
 
+let swiper = new Swiper("#swiper", {
+    slidesPerView: 1,
+    centeredSlides: true,
+    speed:1200,
+    loop:true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  
+  });
+  swiper.enable();
+
 </script>
 
 <style scoped>
@@ -74,7 +91,7 @@
         align-items: center;
         justify-self: center;
         font-size: 22px;
-        margin-top: 580px;
+        margin-top: 622px;
         background-color: #ffffff;
         backdrop-filter: blur(20px);
         color: rgb(0, 0, 0);

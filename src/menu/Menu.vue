@@ -104,7 +104,7 @@ function handleAddToCart(item) {
     background-color: transparent;
     color: rgb(0, 0, 0);
     border: none;
-    border-bottom: 2px solid #47ad5a;
+    border-bottom: 2px solid #fdff76;
     height: 50px;
     font-size: 16px;
     width: 140px;
@@ -113,7 +113,7 @@ function handleAddToCart(item) {
 }
 .menu-filter>button:hover{
     transition: 0.1s;
-    border-bottom:solid rgb(69, 185, 104)
+    border-bottom:solid #fbff25
 }
 .menu-filter>button:not(:hover){
     transition: 0.1s;
