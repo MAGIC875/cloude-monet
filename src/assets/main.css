@@ -4,8 +4,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family:'Times New Roman', Times, serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
 body{
-  background-color: #f8f8f8;
+  background-color: #d8ffd8;
 }

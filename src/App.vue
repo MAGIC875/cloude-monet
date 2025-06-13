@@ -42,6 +42,7 @@ body {
 }
 main{
   display: grid;
+  
 }
 .navbar {
   position: fixed;
@@ -65,7 +66,7 @@ main{
 }
 
 .logo {
-  height: 80px;
+  height: 72px;
 }
 
 .nav-p {
@@ -95,8 +96,10 @@ main{
 .nav-link {
   text-decoration: none;
   color: inherit;
-  padding: 3px;
+  color: #424242;
+  padding: 5px;
   border: 1px solid;
+  border-radius: 4px;
 }
 
 .nav-button:active {
@@ -105,11 +108,17 @@ main{
 
 .router-link-active {
   color: #3a8b49;
+  box-shadow: 0px 0px 20px 0px #47ac5a33;
 }
 
 main {
   margin: 0 auto;
   margin-top: 120px;
   min-height: 300px;
+}
+@media screen and (max-width: 735px) {
+  .logo{
+    height: 20px;
+  }
 }
 </style>
