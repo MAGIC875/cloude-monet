@@ -31,7 +31,7 @@ function handleAddToCart(item) {
 
   <div class="menu">
     <div class="menu-logo">
-            <img src="../base/images/menu.jpg" alt="">
+            <img src="../base/images/menu-logo.JPEG" alt="">
         </div>
     <div class="menu-filter">
       <button 
@@ -83,31 +83,39 @@ function handleAddToCart(item) {
         left: 0;
         height: 1071.8px;
     }
+    .menu-logo{
+      background-color:  #1f4b27;
+      margin-bottom:20px ;
+    }
 .menu{
     justify-content: center;
     justify-self: center;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     /* display: flex;
     flex-wrap: wrap; */
     background-color: #ffffff;
     width: 1400px;
-    height: 2700px;
-    box-shadow: 0px 6px 10px;
+    height: 2500px;
+    box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
 }
 .menu-filter{
     width: 1400px;
     justify-content: center;
     display: flex;
     height: 100px;
+    padding-top: 10px;
 }
 .menu-filter>button{
     background-color: transparent;
     color: rgb(0, 0, 0);
     border: none;
-    border-bottom: 2px solid #fdff76;
+    border-bottom: 2px solid #fcda91;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgb(255, 231, 187);
     height: 50px;
+    padding: 5px;
     font-size: 16px;
-    width: 140px;
+    width: 150px;
     margin: 10px;
     cursor: pointer;
 }

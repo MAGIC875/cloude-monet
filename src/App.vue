@@ -81,7 +81,7 @@ main{
 .buttons {
   position: absolute;
   left: 50%;
-  transform: translateX(-60%);
+  transform: translateX(-52%);
   display: flex;
   /* gap: 10px; */
   align-items: center;

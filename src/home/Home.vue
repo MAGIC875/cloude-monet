@@ -6,59 +6,338 @@
     </video>
     </div>
 
-    <div class="home">
-        <div class="info">
+    <div class="home" id="gsap">
+        <div class="info" id="gsap2">
             <div class="info-prev">
-            <div class="info-logo">
-                <img src="../base/images/logo.png" alt="">
+                <div class="info-logo">
+                    <img src="../base/images/logo.jpg" alt="">
+                </div>
             </div>
-        </div>
-        <div class="main-info">
-            <h2>Описание ресторана</h2>
-            <hr>
-            <h3>Кухня</h3>
-            <p>Самое жаркое место в ресторане, в котором повара готовят различного рода блюда, а официанты постоянно требуют выполнить свои заказы. Это помещение выполнено в белых тонах, здесь достаточно яркое освещение и хорошие условия для работы, если не считать жары. Здесь у каждого есть своё рабочее место. У кондитера даже свой уголок есть, а ещё имеется уголок для мойки посуды, склад-холодильник и обычный склад. Также у выхода на задний двор располагаются шкафчики для персонала всего ресторан. </p>
-            <h3>Зал</h3>
-            <p>Здесь трудятся официанты, обслуживая гостей, хостес, которая принимает их, а также бармен, который разливает всякого рода напитки. Зал делится на основную зону, зону диванов и бар. Помещение в основном сделано в теплых тонах: повсюду стоят светильники, мебель, в основном, цвета красного вина. В зоне диванов она белая. Паркет и стены здесь деревянного цвета. </p>
-            <hr>
-            <img  class="img1" src="../base/images/slider1.webp" alt="">
-            <h2>Персонал</h2>
-            <hr>
-            <h3>Кухня</h3>
-            <h4>Шеф-повар</h4>
-            <p>Виктор Петрович Баринов — первый шеф-повар ресторана Claude Monet. Мудрый и иногда агрессивный бог Кухни, как его назвал его бывший шеф-повар. Виктор Петрович множество раз участвовал в кулинарных турнирах по всему миру. Постоянно любит пить и в казино до утра посидеть, что является его главной проблемой.</p>
-            <h4>Су-шеф</h4>
-            <p>Лев Семёнович Соловьёв — су-шеф ресторана Claude Monet при Викторе Баринове и некоторое время при Германе. Всё время заикается, но это не мешало ему быть лучшим су-шефом Claude Monet. В 18 серии был уволен из-за кризиса, но Шеф вернул его на работу. Когда Шеф попал в больницу, Лёва заменял его. В 4 сезоне уволился и перешёл работать в Arcobaleno к Виктору Петровичу. </p>
-            <h4>​Повара-универсалы</h4>
-            <p>Арсений Андреевич Чуганин — бывший повар-универсал ресторана Claude Monet, специалист по мясу. Всё время ворует продукты. Вместе со своим лучшим другом Федей постоянно подшучивает над персоналом. В 18 серии был уволен из-за кризиса, но Шеф вернул его на работу. Уволился по собственному желанию. </p>
-            <p>Фёдор Михайлович Юрченко — бывший повар-универсал ресторана Claude Monet, специалист по рыбе. Вместе со своим лучшим другом Сеней постоянно подшучивает над персоналом. В 18 серии был уволен из-за кризиса, но Шеф вернул его на работу. Уволился по собственному желанию.</p>
-            <h4>Кондитер-пекарь</h4>
-            <p>Луи Бенуа — бывший кондитер-пекарь ресторана Claude Monet. Прибыл из Прованса (Франция). Не скрывает своей гомосексуальности, любит болтать по мобильному телефону, при этом зачастую ссорится со своим возлюбленным из Франции. В 18 серии был уволен из-за кризиса, но Шеф вернул его на работу. Уволился по собственному желанию.</p>
-            <h4>Молекулярная кухня</h4>
-            <p>Екатерина Викторовна Семёнова — бывший су-шеф молекулярной кухни ресторана Claude Monet. Была нанята Нагиевым. Стала первой женщиной-поваром на кухне у Виктора Баринова. Врала, что окончила кулинарную академию в Париже (на самом деле была отчислена). Позже стала су-шефом молекулярной кухни. Уволилась по собственному желанию. Позже вернулась в качестве су-шефа.</p>
-            <h4>Повора</h4>
-            <p>Максим Леонидович Лавров — бывший повар ресторана Claude Monet. Макс не плохо готовит, но правда допускает много косяков. Лучший друг Кости. В конце 2 сезона был уволен Виктором Петровичем за предательство. После он стал официантом, а потом вновь вернулся в повара. Дважды был су-шефом. Уволился по собственному желанию, после того, как изменил Вике. </p>
-            <p>Родион Сергеевич Громов — бывший повар ресторана Claude Monet. Крупный бизнесмен, потерявший память. Ранее жил на заднем дворе ресторана, но из-за Андрея Михайловича был вынужден стать поваром, чтобы остаться жить во дворе. Проработал менее часа, так как первое своё блюдо он приготовил другу, который узнал Родиона Сергеевича.</p>
-            <p>Денис Андреевич Крылов — бывший повар ресторана Claude Monet. Приехал из Воронежа. Друг детства Макса. Изначально был официантом, но позже перешёл в повара и был уволен в первый же день. По просьбе Виктора Петровича Лёва вернул его и отправил на заготовки. Благодаря Максу прошёл аттестацию у Германа и стал поваром. После появления рояля в ресторане стал подрабатывать музыкантом. Уволился по собственному желанию.</p>
-            <img src="../base/images/img2.jpg" alt="">
+            <div class="main-info" id="gsap3">
 
-            <h3>Зал</h3>
-            <h4>Директор</h4>
-            <p>Виктория Сергеевна Гончарова — нынешний директор ресторана Claude Monet. Строгий, но в то же время добрый директор. С пониманием относится к подчинённым и даже готова их успокоить, например как Настю, которая часто плакала. Несколько раз увольнялась, но после вернулась. В конце 5 сезона вернулась в ресторан вместе с Максом. </p>
-            <h4>Официанты</h4>
-            <p>Анастасия Степановна Анисимова — бывшая официантка ресторана Claude Monet. Вегетарианка. Несколько наивна, сентиментальна и романтична. Девушка, а позже жена бармена Кости. </p>
-            <p>Александра Павловна Бубнова — бывшая официантка ресторана Claude Monet. Встречалась с Ильёй и Максом. Позже была уволена</p>
-            <p>Илья Владимирович — бывший официант ресторана Claude Monet. Работал в ресторане до 1 серии, встречался с Сашей, но потом уволился. Позже вернулся, а в 44 серии был уволен.</p>
-            <p>Денис Андреевич Крылов — некоторое время был официантом ресторана Claude Monet. Приехал из Воронежа. Друг детства Макса. В первый же день был уволен, но Макс помог ему стать поваром.</p>
-            <img src="../base/images/img3.jpg" alt="">
-        </div>
+                <div class="Unit" id="target">
+                    <div class="Unit_img ">
+                        <img src="../base/images/Unit-imgs/нагиев.webp" alt="">
+                    </div>
+                    <div class="Unit-text ">
+                        <div class="Unit-title">
+                            Владелец
+                        </div>
+                        <div class="Unit-subtitle">
+                            Дмитрий Владимирович Нагиев
+                        </div>
+                        <div class="Unit-desc">
+                            «Очень хороший фильм. Я сценарий прочитал — ничего не понял, вообще ничего!»឵឵឵឵឵឵ — ©Дмитрий Нагиев(актер и владелец ресторана claude monet)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Unit" id="target">
+                    <div class="Unit_img bc-red">
+                        <img src="../base/images/Unit-imgs/шеф.webp" alt="">
+                    </div>
+                    <div class="Unit-text bc-red">
+                        <div class="Unit-title">
+                            Шеф-повар
+                        </div>
+                        <div class="Unit-subtitle">
+                            Виктор Петрович Баринов
+                        </div>
+                        <div class="Unit-desc">
+                            «Известный шеф-повар Поль Бокюз однажды сказал: "Жизнь — это маленькая кухня, на которой мы готовим блюда под названием ,,счастье''.  На этой кухне мы сами себе шеф-повара, и только нам решать, какие ингредиенты мы будем добавлять в наши блюда. Важно помнить, что универсального рецепта нет, поэтому творите, пробуйте что-то новое. И, может быть, тогда, в конце, вас будет ждать награда".»
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Unit" id="target">
+                    <div class="Unit_img bc-orange">
+                        <img src="../base/images/Unit-imgs/вика.webp" alt="">
+                    </div>
+                    <div class="Unit-text bc-orange">
+                        <div class="Unit-title">
+                            Директор
+                        </div>
+                        <div class="Unit-subtitle">
+                            Виктория Сергеевна Гончарова
+                        </div>
+                        <div class="Unit-desc">
+                            Красивая, уверенная в себе и независимая женщина. Она любит дорого и элегантно одеваться, поэтому почти каждый день на ней разный наряд.
+                        </div>
+                    </div>
+                </div>
+
+                <Swiper
+    :modules="[Pagination, Autoplay]"
+    :slides-per-view="1"
+    :loop="true"
+    :speed="1000"
+    :autoplay="{ delay: 3000}"
+    pagination
+    class="mySwiper"
+  >
+    <SwiperSlide>
+      <img src="../base/images/slider3.jpg" alt="Слайд 1" />
+    </SwiperSlide>
+    <SwiperSlide>
+      <img src="../base/images/slider2.jpg" alt="Слайд 2" />
+    </SwiperSlide>
+    <SwiperSlide>
+      <img src="../base/images/slider1.webp" alt="Слайд 3" />
+    </SwiperSlide>
+  </Swiper>
+            <div class="grid_wrapper">
+                <div class="Unit mini" id="target2">
+                    <div class="Unit_img">
+                        <img src="../base/images/Unit-imgs/лева.webp" alt="">
+                    </div>
+                    <div class="Unit-text">
+                        <div class="Unit-title">
+                            Су-шеф
+                        </div>
+                        <div class="Unit-subtitle">
+                            Лев Семёнович Соловьёв
+                        </div>
+                        <div class="Unit-desc">
+                            су-шеф ресторана Claude Monet при Викторе Баринове и некоторое время при Германе. Всё время заикается, но это не мешало ему быть лучшим су-шефом Claude Monet.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Unit mini" id="target2">
+                    <div class="Unit_img">
+                        <img src="../base/images/Unit-imgs/макс.webp" alt="">
+                    </div>
+                    <div class="Unit-text">
+                        <div class="Unit-title">
+                            Повар
+                        </div>
+                        <div class="Unit-subtitle">
+                            Максим Леонидович Лавров (Огузок)
+                        </div>
+                        <div class="Unit-desc">
+                            «Вот как-то так. У каждой медали есть две стороны, и однажды все может перевернуться. Тот, кому ты нравился — начинает тебя ненавидеть. Тот, кому ты бил морду — становится твоим другом. Ну а тот, кто казался злобным тираном — становится им чуть меньше» — ©Огузок
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Unit mini" id="target2">
+                    <div class="Unit_img">
+                        <img src="../base/images/Unit-imgs/сеня.webp" alt="">
+                    </div>
+                    <div class="Unit-text">
+                        <div class="Unit-title">
+                            Повар
+                        </div>
+                        <div class="Unit-subtitle">
+                            Сеня
+                        </div>
+                        <div class="Unit-desc">
+                            «Хлебать мой суп!»឵឵឵឵឵ — ©Сеня 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Unit mini" id="target2">
+                    <div class="Unit_img">
+                        <img src="../base/images/Unit-imgs/федя.webp" alt="">
+                    </div>
+                    <div class="Unit-text">
+                        <div class="Unit-title">
+                            Повар
+                        </div>
+                        <div class="Unit-subtitle">
+                            Фёдор Михайлович Юрченко 
+                        </div>
+                        <div class="Unit-desc">
+                            Специалист по рыбе. Вместе со своим лучшим другом Сеней постоянно подшучивает над персоналом
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Unit mini" id="target2">
+                    <div class="Unit_img">
+                        <img src="../base/images/Unit-imgs/луи.webp" alt="">
+                    </div>
+                    <div class="Unit-text">
+                        <div class="Unit-title">
+                            Кондитер-пекарь
+                        </div>
+                        <div class="Unit-subtitle">
+                            Луи Бенуа 
+                        </div>
+                        <div class="Unit-desc">
+                            Прибыл из Прованса (Франция), лучший в своем деле.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Unit mini" id="target2">
+                    <div class="Unit_img bc-red">
+                        <img src="../base/images/Unit-imgs/айнура.webp" alt="">
+                    </div>
+                    <div class="Unit-text bc-red">
+                        <div class="Unit-title">
+                            Уборщик
+                        </div>
+                        <div class="Unit-subtitle">
+                            Айнура Жаннатбековна Кененсарова
+                        </div>
+                        <div class="Unit-desc">
+                            красивая, уверенная в себе и независимая женщина. Она любит дорого и элегантно одеваться, поэтому почти каждый день на ней разный наряд.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="Unit end" id="target3">
+                    <div class="Unit_img bc-yellow">
+                        <img src="../base/images/Unit-imgs/o1.webp" alt="">
+                        <div class="Unit-text bc-yellow">
+                            <div class="Unit-title">
+                                Официант
+                            </div>
+                            <div class="Unit-subtitle">
+                                Анастасия Степановна Анисимова 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Unit_img bc-yellow">
+                        <img src="../base/images/Unit-imgs/02.webp" alt="">
+                        <div class="Unit-text bc-yellow">
+                        <div class="Unit-title">
+                            Официант
+                        </div>
+                        <div class="Unit-subtitle">
+                            Александра Павловна Бубнова 
+                        </div>
+                    </div>
+                    </div>
+                    <div class="Unit_img bc-yellow">
+                        <img src="../base/images/Unit-imgs/03.webp" alt="">
+                        <div class="Unit-text bc-yellow">
+                            <div class="Unit-title">
+                                Официант
+                            </div>
+                            <div class="Unit-subtitle">
+                                Илья Владимирович Пелевин
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Unit_img bc-red">
+                        <img src="../base/images/Unit-imgs/o4.webp" alt="">
+                        <div class="Unit-text bc-red">
+                            <div class="Unit-title">
+                                Хостес
+                            </div>
+                            <div class="Unit-subtitle">
+                                Ангелина Денисовна Смирнова
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            <div class="ps">
+
+                Claude Monet — московский ресторан французской кухни, главное место действия 1—4 сезонов сериала «Кухня».
+                Ресторан был открыт актёром и шоуменом Дмитрием Нагиевым, в начале двухтысячных. Директором становится Виктория Сергеевна Гончарова. В 2004 году в ресторане появляется шеф-повар — друг Нагиева — Виктор Петрович Баринов. Через некоторое время ресторан становится самым престижным и лучшим в Москве, туда приходят работать множество поваров. 
+                <br>
+                <br>
+                Адрес: Москва, улица Спиридонова, 25
+                (В сериале — Малая Бронная, 25)
+                <br>
+                <br>
+                <span>Claude Monet©</span>
+            </div>
+            </div>
         </div>
     </div>
 
 </template>
 
-<script>
+<script setup>
+import { onMounted } from 'vue'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/swiper-bundle.css'
+
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+
+  gsap.to("#gsap2", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    width: '300%',
+    boxShadow: "none",
+    scrub: true,
+  })
+
+})
+
+onMounted(() => {
+  gsap.utils.toArray("#target").forEach((el) => {
+    gsap.fromTo(el,
+      { opacity: 0.2, y: 100 },
+      {
+        opacity: 1,
+        y: 0,
+        ease: "power2.out",
+        scrollTrigger: {
+
+          trigger: el,
+          start: "top 80%",
+          end: "top 30%",
+          scrub: true, 
+        },
+      }
+    )
+  })
+})
+onMounted(() => {
+  gsap.utils.toArray("#target2").forEach((el) => {
+    gsap.fromTo(el,
+      { opacity: 0.2, y: 100 },
+      {
+        opacity: 1,
+        y: 0,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 100%",
+          end: "top 60%",
+          scrub: true, 
+        },
+      }
+    )
+  })
+})
+onMounted(() => {
+  gsap.utils.toArray("#target3").forEach((el) => {
+    gsap.fromTo(el,
+      { opacity: 0.7, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        ease: "power2.out",
+        gap:"85px",
+    
+        scrollTrigger: {
+            scrub:2,
+          trigger: el,
+          start: "top 90%",
+          end: "top 10%",
+          scrub: true, 
+        },
+      }
+    )
+  })
+})
 </script>
 
 <style scoped>
@@ -67,31 +346,44 @@
 
     }
     .home{
+        
         display: inline-grid;
     }
     .info{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
         display: grid;
         align-items: center;
         justify-self: center;
         font-size: 22px;
-        margin-top: 622px;
-        background-color: #ffffff;
+        margin-top: 540px;
+        background-color: #ffffff3b;
         backdrop-filter: blur(20px);
         color: rgb(0, 0, 0);
-        width: 1344px;
+        width:60%;
+        max-width: 100%;
         height:fit-content;
 
-        box-shadow:rgb(0, 0, 0) 0px 0px 10px;
+        box-shadow:rgb(182, 182, 182) 0px 0px 10px;
     }
+    .grid_wrapper{
+    display: inline-grid;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
     hr{
         width: 90%;
     }
     .main-info{
-        /* padding: 35px; */
+        padding: 35px;
         display: grid;
-        /* align-items: center; */
         justify-self: center;
-        color: #333333;
     }
     .info-prev{
         margin: 0;
@@ -113,29 +405,6 @@
         left: 0;
         height: 1071.8px;
     }
-    h2{
-        color: #1f4b27;
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-    h3{
-        margin-top: 20px;
-        margin-bottom:10px ;
-        color: #296333;
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-    h4{
-        padding-bottom:10px ;
-        color: #388a47;
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-    p{
-        padding-bottom: 10px;
-        padding-left: 35px;
-        padding-right: 35px;
-    }
     .info>.main-info>img{
         justify-self: center;
         display: flex;
@@ -146,5 +415,135 @@
         /* height: 420px; */
         width: 100%;
     }
+    .Unit{
+        justify-self: center;
+        display: flex;
+        max-width: 90%;
+        background-color: #ffffffa1;
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        box-shadow: 0px 0px 15px 0px #e6e6e6c9;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+    .Unit_img:hover{
+        scale: 1.05;
+        transition: 0.5s;
+    }
+    .Unit_img:not(:hover){
+        transition: 0.3s;
+    }
+    .Unit-text:hover{
+        scale: 1.03;
+        transition: 0.5s;
+    }
+    .Unit-text:not(:hover){
+        transition: 0.3s;
+    }
+    .Unit_img{
+        min-width: 300px;
+        height: 300px;
+        box-shadow: #727272 0px 0px 5px 0px;
+        border-radius: 12px;
+        border: 3px solid #337c41;
+
+    }
+    .Unit_img>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+        border-radius: 10px;
+    }
+    .Unit-text{
+        padding: 40px;
+        margin-left: 30px;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius:20px ;
+        border: 3px solid #337c41;
+    }
+    .Unit-title{
+        font-weight: bolder;
+        font-size: 24px;
+    }
+    .Unit-subtitle{
+        font-weight:bold;
+        font-size: 16px;
+        color: #252525;
+    }
+    .Unit-desc{
+        margin-top: 10px;
+        color: #5a5a5a;
+        font-size: 18px;
+
+    }
+    .mySwiper {
+  width: 90%;
+  height: 700px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 15px 0px #e6e6e6c9;
+}
+
+.mySwiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 10px; */
+}
+.mini{
+    width: 45%;
+}
+.mini>.Unit-text>.Unit-desc{
+    font-size: 14px;
+
+}
+.end{
+    height: 420px;
+    margin-top: 40px;
+    display: flex;
+    gap:0px;
+    justify-content: center;
+}
+.end>.Unit_img{
+    min-width: 230px;
+    min-height: 200px;
+}
+.end>.Unit_img>.Unit-text{
+    min-height: 44px;
+    margin-top: 10px;
+    margin-left: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.end>.Unit_img>.Unit-text>.Unit-title{
+    font-size: 15px;
+}
+.end>.Unit_img>.Unit-text>.Unit-subtitle{
+font-size: 12px;
+
+}
+.ps{
+    text-align: center;
+    justify-self: center;
+    color: #ffffffa1;
+    padding-top: 130px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    width: 650px;
+}
+
+
+
+.bc-yellow{
+    border-color: rgb(255, 240, 25);
+}
+.bc-red{
+    border-color: rgb(172, 34, 34);
+}
+.bc-orange{
+    border-color: rgb(253, 179, 41);
+}
 
 </style>

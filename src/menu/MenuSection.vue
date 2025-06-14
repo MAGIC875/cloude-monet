@@ -69,19 +69,22 @@
     padding-left: 45px;
     margin-top: 30px;
     color: #275730;
-  }
+    margin-bottom: 30px 
+   }
   
   .menu-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 6px;
     color: #17381d;
+
   }
   
   .menu-item {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 324px;;
+    /* border: 2px solid; */
   }
   
   .menu-item img {
@@ -91,6 +94,7 @@
   
   .menu-info {
     margin-top: 0.5rem;
+
   }
   
   hr {
@@ -106,7 +110,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 150px;
+    margin-left: 156px;
     transition: transform 0.2s ease;
   }
   
@@ -141,5 +145,11 @@
     color: #525252;
     font-size: 14px;
     height: 120px;
+  }
+  h2{
+    padding-bottom: 10px;
+  }
+  h3{
+    padding-bottom: 10px;
   }
   </style>

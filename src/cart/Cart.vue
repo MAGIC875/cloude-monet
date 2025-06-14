@@ -8,11 +8,10 @@
 
   <div class="cart">
     <div class="cart-logo">
-      <img src="../base/images/logo2.jpg" alt="">
-      <p class="cart-logo-p">ОФОРМИТЬ ЗАКАЗ</p>
-      <hr>
+      <img src="../base/images/logo.jpg" alt="">
+      <!-- <p class="cart-logo-p">ОФОРМИТЬ ЗАКАЗ</p> -->
     </div>
-
+<div class="cart-main">
     <h2>Корзина</h2>
 
     <div v-if="cart.items.length === 0">Корзина пуста.</div>
@@ -25,11 +24,13 @@
     </ul>
 
     <div v-if="cart.items.length">
-      <p><strong>Итого:</strong> {{ cart.totalPrice.toFixed(2) }} ₽</p>
+      <p style="padding-top: 15px;"><strong>Итого:</strong> {{ cart.totalPrice.toFixed(2) }} ₽</p>
       <button @click="cart.clearCart">Очистить корзину</button>
     </div>
+    
   </div>
 
+</div>
   <button
     class="finish"
     :disabled="cart.items.length === 0"
@@ -37,6 +38,7 @@
   >
     оформить заказ
   </button>
+
 </template>
   
 <script setup>
@@ -65,17 +67,25 @@ const goToCheckout = () => {
   .cart {
     margin-top: 100px;
     justify-self: center;
-    padding: 3rem;
+    padding: 0rem 3rem 3rem 3rem;
     min-height: 760px;
     height:fit-content;
-    width: 1400px;
+    width: 920px;
     box-shadow: 0px 6px 10px;
-    background-color: #fff;
+    background-color: #1f4b27;
     font-size: 22px;
+    box-shadow: 0px 0px 10px 0px rgb(212, 209, 209);
   }
+.cart-main{
+  min-height: 740px;
+  background-color: #ffffff;
+  padding: 24px;
+  border: #64866a 1px solid;
+}
   .cart-list {
     list-style: none;
     padding: 0;
+    /* background-color: #ffffffb9; */
   }
   button{
     border: none;
@@ -130,21 +140,27 @@ const goToCheckout = () => {
     margin: 0;
     width: 100%;
     justify-items: center;
+    display: inline-grid;
   }
   .cart-logo>img{
     /* justify-self: center; */
-    width: 400px;
+    width: 250px;
   }
   .cart-logo-p{
-    /* justify-self: center; */
-    font-size: 34px;
+    font-size: 22px;
     font-weight: bold;
-    color: #21502a;
+    color: #ffffff;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
   }
   .cart-logo-p{
     margin: 0;
     padding: 0;
   }
-  
+  h2{
+    padding-bottom: 10px;
+  }
+  hr{
+    color: transparent;
+  }
   </style>
