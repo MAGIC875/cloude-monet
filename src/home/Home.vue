@@ -326,7 +326,6 @@ onMounted(() => {
         y: 0,
         ease: "power2.out",
         gap:"85px",
-        width:"80%",
     
         scrollTrigger: {
             scrub:2,
@@ -420,7 +419,7 @@ onMounted(() => {
     .Unit{
         justify-self: center;
         display: flex;
-        max-width: 90%;
+        width: 90%;
         background-color: #ffffffa1;
         backdrop-filter: blur(20px);
         padding: 20px;
@@ -698,7 +697,7 @@ font-size: 8px;
 
 }
 .ps{
-    padding-top: 130px;
+    padding-top: 40px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
