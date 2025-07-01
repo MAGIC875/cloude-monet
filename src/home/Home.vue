@@ -1,7 +1,7 @@
 <template>
     <div class="video">
     <video autoplay muted loop>
-                    <source src="../base/video/intro3.MOV" type="video/mp4">
+                    <source src="../base/video/intro.MOV" type="video/mp4">
                     Ваш браузер не поддерживает видео.
     </video>
     </div>
@@ -320,12 +320,13 @@ onMounted(() => {
 onMounted(() => {
   gsap.utils.toArray("#target3").forEach((el) => {
     gsap.fromTo(el,
-      { opacity: 0.7, y: 50 },
+      { opacity: 0.5, y: 50 },
       {
         opacity: 1,
         y: 0,
         ease: "power2.out",
         gap:"85px",
+        width:"80%",
     
         scrollTrigger: {
             scrub:2,
@@ -346,7 +347,6 @@ onMounted(() => {
 
     }
     .home{
-        
         display: inline-grid;
     }
     .info{
@@ -357,7 +357,7 @@ onMounted(() => {
         align-items: center;
         justify-self: center;
         font-size: 22px;
-        margin-top: 540px;
+        margin-top: 580px;
         background-color: #ffffff3b;
         backdrop-filter: blur(20px);
         color: rgb(0, 0, 0);
@@ -400,10 +400,12 @@ onMounted(() => {
     .video{
         display: flex;
         position: fixed;
+        object-fit: cover;
         z-index: -1;
         top: 0;
         left: 0;
-        height: 1071.8px;
+        /* width: 80%; */
+        /* height: 1071.8px; */
     }
     .info>.main-info>img{
         justify-self: center;
@@ -476,9 +478,10 @@ onMounted(() => {
         margin-top: 10px;
         color: #5a5a5a;
         font-size: 18px;
-
+        cursor: default;
     }
     .mySwiper {
+        z-index: 3;
   width: 90%;
   height: 700px;
   margin-bottom: 40px;
@@ -500,6 +503,7 @@ onMounted(() => {
 
 }
 .end{
+
     height: 420px;
     margin-top: 40px;
     display: flex;
@@ -545,5 +549,164 @@ font-size: 12px;
 .bc-orange{
     border-color: rgb(253, 179, 41);
 }
+
+
+@media screen and (max-width: 735px){
+    .info{
+        width: 100%;
+    }
+    .home{
+        padding-top: 125px;
+    }
+    .main-info{
+        padding: 6px;
+    }
+    .info-prev{
+        height:180px;
+    }
+    .info-prev>.info-logo>img{  
+        height: 180px;
+    }
+    .Unit{
+
+        max-width: 90%;
+        padding: 14px;
+        box-shadow: 0px 0px 15px 0px #e6e6e6c9;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+    .Unit_img{
+        min-width: 100px;
+        height: 130px;
+        box-shadow: #727272 0px 0px 5px 0px;
+        border-radius: 12px;
+        border: 3px solid #337c41;
+
+    }
+    .Unit_img>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+        border-radius: 10px;
+    }
+    .Unit-text{
+        padding: 20px;
+        margin-left: 20px;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius:20px ;
+        border: 3px solid #337c41;
+    }
+    .Unit-title{
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    .Unit-subtitle{
+        font-size: 12px;
+    }
+    .Unit-desc{
+        font-size: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+    }
+    .Unit-desc:hover{
+        -webkit-line-clamp: 20;
+        transition:all 1s ease-out;
+    }
+    .Unit-desc:hover .Unit_img{
+        width: 0;
+        transition: 1s ease-in-out;
+    }
+    .mySwiper {
+  width: 100%;
+  height: 310px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.grid_wrapper{
+    display: inline-grid;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.mini{
+        width: 90%;
+        padding: 14px;
+        box-shadow: 0px 0px 15px 0px #e6e6e6c9;
+        border-radius: 20px;
+        margin-bottom: 30px;
+}
+.mini>.Unit_img{
+    min-width: 100px;
+        height: 130px;
+        box-shadow: #727272 0px 0px 5px 0px;
+        border-radius: 12px;
+        border: 3px solid #337c41;
+}
+.mini>.Unit-text{
+    padding: 20px;
+        margin-left: 20px;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius:20px ;
+        border: 3px solid #337c41;
+}
+ 
+.mini>.Unit-text>.Unit-desc{
+    font-size: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+}
+.mini>.Unit_img:hover .mini>.Unit-desc{
+        display: block;
+}
+.end{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding-bottom: 80px;
+    width: fit-content;
+    margin-top: 20px;
+}
+.end>.Unit_img{
+    min-width: 100px;
+    min-height: 100px;
+}
+.end>.Unit_img>.Unit-text{
+    min-height: 30px;
+    margin-top: 5px;
+    margin-left: 0;
+    max-width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.end>.Unit_img>.Unit-text>.Unit-title{
+    font-size: 12px;
+}
+.end>.Unit_img>.Unit-text>.Unit-subtitle{
+font-size: 8px;
+
+}
+.ps{
+    padding-top: 130px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    width: 100%;
+}
+}
+
+
 
 </style>

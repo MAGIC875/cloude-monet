@@ -19,18 +19,20 @@
     <ul v-else class="cart-list">
       <li v-for="(item, index) in cart.items" :key="index">
         <strong>{{ item.title }}</strong> — {{ item.cost.toFixed(2) }} ₽
-        <button @click="cart.removeItem(index)">Удалить</button>
+        <button class="remove-item" @click="cart.removeItem(index)">X</button>
       </li>
     </ul>
 
-    <div v-if="cart.items.length">
-      <p style="padding-top: 15px;"><strong>Итого:</strong> {{ cart.totalPrice.toFixed(2) }} ₽</p>
+    <div class="main-cart-bottom" v-if="cart.items.length">
+      <hr>
+      <p class="all-cost"><strong>Итого:</strong> {{ cart.totalPrice.toFixed(2) }} ₽</p>
       <button @click="cart.clearCart">Очистить корзину</button>
     </div>
     
   </div>
 
 </div>
+<div class="finish-button">
   <button
     class="finish"
     :disabled="cart.items.length === 0"
@@ -38,7 +40,7 @@
   >
     оформить заказ
   </button>
-
+</div>
 </template>
   
 <script setup>
@@ -68,7 +70,6 @@ const goToCheckout = () => {
     margin-top: 100px;
     justify-self: center;
     padding: 0rem 3rem 3rem 3rem;
-    min-height: 760px;
     height:fit-content;
     width: 920px;
     box-shadow: 0px 6px 10px;
@@ -77,7 +78,7 @@ const goToCheckout = () => {
     box-shadow: 0px 0px 10px 0px rgb(212, 209, 209);
   }
 .cart-main{
-  min-height: 740px;
+  min-height: 540px;
   background-color: #ffffff;
   padding: 24px;
   border: #64866a 1px solid;
@@ -87,13 +88,25 @@ const goToCheckout = () => {
     padding: 0;
     /* background-color: #ffffffb9; */
   }
+  .remove-item{
+    background-color: hsla(0, 100%, 57%, 0.699);
+    width: 20px;
+    height: 20px;
+    align-self:center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 100%;
+
+    color: white;
+  }
   button{
     border: none;
     font-size: 15px;
     background-color: #e9e9e9;
     border-radius: 3px;
-    width: auto;
-    height: 25px;
+    width: 140px;
+    height: 28px;
+    
   }
   button:hover{
     transition: 0.2s;
@@ -106,9 +119,15 @@ const goToCheckout = () => {
     margin-bottom:10px ;
     color: #333333;
   }
+  .all-cost{
+    padding-top: 50px;
+  }
+  .finish-button{
+    display: inline-grid;
+
+    justify-items: center;
+  }
   .finish {
-  left: 45%;
-  right: 50%;
   position: fixed;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   bottom: 0;
@@ -163,4 +182,37 @@ const goToCheckout = () => {
   hr{
     color: transparent;
   }
+  @media screen and (max-width: 735px){
+    .cart {
+    margin-top: 0px;
+    justify-self: center;
+    padding: 0rem 2rem 0rem 2rem;
+    min-height: 885px;
+    height:fit-content;
+    width: 100%;
+    box-shadow: none;
+    font-size: 16px;
+
+  }
+  .cart-main{
+  min-height: 580px;
+  padding: 18px;
+  box-shadow: 0px 0px 4px 0px rgb(206, 206, 206);
+}
+
+
+
+.cart-logo{
+    width: 100%;
+    justify-items: center;
+    display: inline-grid;
+  }
+  .cart-logo>img{
+    /* justify-self: center; */
+    width: 200px;
+  }
+  .all-cost{
+    padding-top: 50px;
+  }
+}
   </style>

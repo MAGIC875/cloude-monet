@@ -24,7 +24,7 @@ function handleAddToCart(item) {
 <template>
     <div class="video">
     <video autoplay muted loop>
-                    <source src="../base/video/intro.MP4" type="video/mp4">
+                    <source src="../base/video/intro3.MOV" type="video/mp4">
                     Ваш браузер не поддерживает видео.
     </video>
     </div>
@@ -85,7 +85,7 @@ function handleAddToCart(item) {
     }
     .menu-logo{
       background-color:  #1f4b27;
-      margin-bottom:20px ;
+      /* margin-bottom:20px ; */
     }
 .menu{
     justify-content: center;
@@ -93,35 +93,40 @@ function handleAddToCart(item) {
     /* padding-top: 30px; */
     /* display: flex;
     flex-wrap: wrap; */
+    margin-top: 100px;
     background-color: #ffffff;
-    width: 1400px;
-    height: 2500px;
+    width: 80%;
+    height: fit-content;
     box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
 }
 .menu-filter{
-    width: 1400px;
+    width:100%;
     justify-content: center;
     display: flex;
     height: 100px;
     padding-top: 10px;
+    /* background-image: linear-gradient(#1f4b27 10%,white); */
+    background-color: #fff;
 }
 .menu-filter>button{
-    background-color: transparent;
-    color: rgb(0, 0, 0);
+    background-color: #1f4b27;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
     border: none;
     border-bottom: 2px solid #fcda91;
     border-radius: 10px;
     box-shadow: 0px 5px 10px 0px rgb(255, 231, 187);
     height: 50px;
     padding: 5px;
-    font-size: 16px;
+    font-size: 14px;
     width: 150px;
     margin: 10px;
     cursor: pointer;
 }
 .menu-filter>button:hover{
-    transition: 0.1s;
-    border-bottom:solid #fbff25
+    transition: 0.2s;
+    border-bottom:solid #ffd725;
+    scale:1.05;
 }
 .menu-filter>button:not(:hover){
     transition: 0.1s;
@@ -132,14 +137,40 @@ function handleAddToCart(item) {
 
 .menu-logo{
     display: inline-grid;
-    width: 1400px;
-    height: 220px;
+    width: 100%;
+    height: 9%;
 }
 .menu-logo>img{
     display: flex;
     justify-self: center;
     height: 210px;
     width: 200px;
+}
+@media screen and (max-width: 735px){
+  .video{
+    display: none;
+  }
+  .menu{
+    justify-content: center;
+    /* justify-self: center; */
+    width: 100%;
+    left: 0;
+    margin: 0;
+    height: fit-content;
+
+}
+.menu-filter>button{
+  font-size: 10px;
+  height: 30px;
+  width: 70px;
+  margin: 5px;
+  padding:4px;
+
+}
+.menu-logo>img{
+    height: 105px;
+    width: 100px;
+}
 }
 
 </style>

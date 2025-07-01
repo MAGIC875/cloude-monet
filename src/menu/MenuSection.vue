@@ -1,14 +1,14 @@
 <template>
     <section class="menu-section">
-      <h2>{{ title }}</h2>
+      <h2 class="menu-sec">{{ title }}</h2>
       <hr>
       <div class="menu-items">
         <div v-for="item in items" :key="item.id" class="menu-item">
           <img :src="item.src" :alt="item.title" class="menu-image" />
           <div class="menu-info">
-            <h3>{{ item.title }}</h3>
+            <h3>{{ item.title }}<strong class="cost2">{{ item.cost.toFixed(2) }} ₽</strong></h3>            
             <p class="desc">{{ item.description }}</p>
-            <strong>{{ item.cost.toFixed(2) }} ₽</strong>
+            <strong class="cost1">{{ item.cost.toFixed(2) }} ₽</strong>
             <button
             @click="(e) => handleAddToCart(item, e)"
             :class="{ animate: animatedItems.includes(item.id) }"
@@ -66,25 +66,30 @@
   
   <style scoped>
   .menu-section {
-    padding-left: 45px;
     margin-top: 30px;
     color: #275730;
-    margin-bottom: 30px 
+    margin-bottom: 30px ;
+
    }
-  
+  .cost2{
+    display: none;
+  }
   .menu-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 1.1%;
     color: #17381d;
+    margin-left: 6%;
 
+  }
+  .menu-sec{
+    margin-left: 6%;
   }
   
   .menu-item {
     display: flex;
     flex-direction: column;
     width: 324px;;
-    /* border: 2px solid; */
   }
   
   .menu-item img {
@@ -99,7 +104,8 @@
   
   hr {
     margin-bottom: 10px;
-    margin-right: 45px;
+    margin-right: 6%;
+    margin-left: 6%;
   }
   
   .menu-info button {
@@ -126,20 +132,7 @@
     animation: pulse 0.4s ease-in-out;
   }
   
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-      background-color: #9c9c9c;
-    }
-    50% {
-      transform: scale(1.1);
-      background-color: #5cb85c;
-    }
-    100% {
-      transform: scale(1);
-      background-color: #9c9c9c;
-    }
-  }
+
   
   .desc {
     color: #525252;
@@ -152,4 +145,44 @@
   h3{
     padding-bottom: 10px;
   }
+
+  @media screen and (max-width: 735px){
+    .menu-item {
+    width: 180px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .menu-items {
+    justify-content: center;
+    gap: 32px;
+    margin-left: 0;
+  }
+  .menu-info button {
+    margin-top: 10;
+    padding: 0.3rem;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .menu-item img {
+    height: 120px;
+    width: 178px;
+  }
+  
+  .menu-info {
+    margin-top: 0.5rem;
+
+  }
+  .desc {
+    color: #525252;
+    font-size: 12px;
+    height: 110px;
+    display: none;
+  }
+  .cost2{
+    display: block;
+  }
+  .cost1{
+    display: none;
+  }
+}
   </style>

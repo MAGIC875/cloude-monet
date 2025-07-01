@@ -117,8 +117,29 @@ main {
   min-height: 300px;
 }
 @media screen and (max-width: 735px) {
-  .logo{
-    height: 20px;
+  .navbar{
+    height: 60px;
   }
+  .logo{
+    height: 40px;
+  }
+  .nav-item {
+  font-size: 12px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.buttons{
+  left: 78%;
+}
+main {
+  left: 0;
+  margin-top: 60px;
+  max-width:100%;
+
+}
+
+
+
+
 }
 </style>

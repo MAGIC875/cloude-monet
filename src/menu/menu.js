@@ -105,7 +105,7 @@ wines:[{
     id:10,
     description:
     'От Domaines Dominique Piron',
-    title: 'Coteaux Bourguignons Blanc',
+    title: 'Coteaux Bourguignons ',
     src: Wine2,
     type: 'wine',
     cost: 21000.0,
